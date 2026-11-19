@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect | College Event Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <div class="brand-icon">C</div>
+                <div>
+                    <h2>Campus<span>Connect</span></h2>
+                    <small>YOUR CAMPUS. ONE PLATFORM.</small>
+                </div>
+            </div>
+
+            <div class="sidebar-profile">
+                <div class="avatar">S</div>
+                <div class="profile-info">
+                    <h4 id="profileName">Student User</h4>
+                    <p id="profileEmail">student@campus.edu</p>
+                    <span id="roleLabel">Student</span>
+                </div>
+            </div>
+
+            <div class="nav-heading">MENU</div>
+            <nav id="navigation"></nav>
+
+            <div class="sidebar-bottom">
+                <div class="sidebar-note">
+                    <span>✦</span>
+                    <p>Discover opportunities. Create memories.</p>
+                </div>
+                <p class="copyright">© 2026 Campus Connect</p>
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <header class="topbar">
+                <div class="topbar-left">
+                    <span class="eyebrow" id="pageLabel">STUDENT PORTAL</span>
+                    <h1 id="pageTitle">Explore Events</h1>
+                    <p id="pageDescription">Discover events happening on your campus.</p>
+                </div>
+
+                <div class="topbar-right">
+                    <div class="role-indicator">
+                        <span class="online-dot"></span>
+                        <span id="currentRole">student</span>
+                    </div>
+                    <div class="top-avatar">S</div>
+                </div>
+            </header>
+
+            <section class="content-area" id="pageContent">
+                <!-- Dynamic content from script.js -->
+            </section>
+
+            <footer class="main-footer">
+                <p>Made for students, powered by opportunities.</p>
+                <span>Campus Connect © 2026</span>
+            </footer>
+
+        </main>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
